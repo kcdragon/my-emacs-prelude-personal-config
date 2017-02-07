@@ -6,4 +6,4 @@
 
 (defun console-log-json-stringify (string)
   (interactive "sObject for console.log(JSON.stringify(OBJECT)): ")
-  (insert "console.log(JSON.stringify(" string "));"))
+  (insert "console.log(\"" string ": \" + JSON.stringify(" string "));"))
